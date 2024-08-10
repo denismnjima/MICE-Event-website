@@ -304,7 +304,7 @@
         .hero
         {
             height: 93vh;
-            /* text-align: center; */
+            text-align: center;
         }
         header{
             justify-content: space-between;
@@ -332,6 +332,7 @@
         .hero-text{
             width: 100%;
             padding-left: 5px;
+            align-items: center;
         }
         .hero-img{
             width: 100%;
