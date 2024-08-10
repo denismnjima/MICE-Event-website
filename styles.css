@@ -246,7 +246,7 @@
     }
     .hero-text h1{
         color: white;
-        font-size: 2vmin;
+        font-size: 20px;
         padding-bottom: 10px;
    }
     .hero-text h2{
@@ -278,7 +278,7 @@
         color: white;
     }
     .hero-text table tr:nth-child(1) td{
-        font-size: 8vmin;
+        font-size: 55px;
         color: white;
         /* font-family:lalezar; */
     }
@@ -303,7 +303,7 @@
     @media (max-width: 768px) {
         .hero
         {
-            height: 99vh;
+            height: 93vh;
             /* text-align: center; */
         }
         header{
