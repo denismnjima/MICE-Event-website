@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AFRICA MICE SUMMIT</title>
+    <title>Africa MICE Summit 2024 - Register in Nairobi</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="description" content="Join Africa MICE Summit 2024 in Nairobi, the premier event for MICE professionals. Register now to connect with leaders in the industry." />
     <meta property="og:title" content="Register for Africa MICE Summit's Leaders forum" />
     <meta property="og:description" content="Africas biggest event for MICE professionals is coming to Nairobi this September." />
     <meta property="og:type" content="website" />
@@ -17,21 +20,65 @@
     <meta property="twitter:site" content="tovutiweb.xyz" />
 </head>
 <body>
-    <main>
-        <header>
-            <a href="./">
-                <img src="Assets/images/logo.png" alt="logo" class="logo"/>
-            </a>
-            <nav>
-                <ul>
-                    <a href=""><li>Events</li></a>
-                    <a href=""><li>Events</li></a>
-                    <a href=""><li>Events</li></a>
-                    <a href=""><li>Events</li></a>
-                </ul>
-            </nav>
-        </header>
-    </main>
+    <main class="hero">
+        <div class="overlay">
+            <header>
+                <a href="./">
+                    <img src="Assets/images/logo.png" alt="logo" class="logo"/>
+                </a>
+                <nav>
+                    <ul>
+                        <a href=""><li>Home</li></a>
+                        <a href="#">
+                            <li class="events-menu">Events <i class="bi bi-chevron-down"></i></li>
+                            <div class="mega-menu">
+                                <ul>
+                                    <li><a href="#">Event 1</a></li>
+                                    <li><a href="#">Event 2</a></li>
+                                    <li><a href="#">Event 3</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                        <a href=""><li>Speakers</li></a>
+                        <a href=""><li>Partners</li></a>
+                    </ul>
+                    <button class="top-button">Register</button>
+                </nav>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="mobile-menu" id="mobileMenu">
+                    <a href="">Home</a>
+                    <a href="#">Events</a>
+                    <a href="">Speakers</a>
+                    <a href="">Partners</a>
+                    <button class="top-button" style="background-color: #ff4500; color: white;">Register</button>
+                </div>
+            </header>
+            <article class="hero-content">
+                <h1>MICE Future Leaders forum Nairobi <time>2024</time></h1>
+                <h2>Empowering <span>young</span> talents in the MICE industry, Fostering <span>Innovation</span>.</h2>
+                <table class="timer">
+                    <tbody>
+                        <tr>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                            <td>00</td>
+                        </tr>
+                        <tr>
+                            <td>Days</td>
+                            <td>Hours</td>
+                            <td>Mins</td>
+                            <td>Secs</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+        </main>
 
 </body>
 </html>
