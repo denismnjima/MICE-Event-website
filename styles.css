@@ -9,9 +9,6 @@
     --white: #ffffffff;
 
     }
-    body{
-        height: 1000vh;
-    }
     @font-face {
         font-family: lalezar;
         src: url(./Assets/fonts/Lalezar/Lalezar-Regular.ttf);
@@ -242,16 +239,20 @@
     }
     .hero-text{
         width: 60%;
+        display: flex;
+        padding-left: 20px;
+        flex-direction: column;
+        justify-content: center;
     }
     .hero-text h1{
         color: white;
-        font-size: 3vmin;
+        font-size: 2vmin;
         padding-bottom: 10px;
    }
     .hero-text h2{
         font-family:roboto ;
         color: white;
-        font-size: 8vmin;
+        font-size: 5vmin;
 
     }
     .hero-img{
@@ -265,11 +266,45 @@
         animation-duration: 7s;
         animation-iteration-count: infinite;
     }
+    .hero-text table
+    {
+        width: fit-content;
+        margin-top: 15px;
+        
+    }
+    .hero-text table tr td
+    {
+        padding-right: 15px;
+        color: white;
+    }
+    .hero-text table tr:nth-child(1) td{
+        font-size: 8vmin;
+        color: white;
+        /* font-family:lalezar; */
+    }
+    .hero-text table tr:nth-child(2) td{
+        font-size: 13px;
+        padding-left: 5px;
+        margin-top: -55px;
+
+    }
+    .hero-button{
+        width: fit-content;
+        margin-top: 20px;
+        padding: 15px 40px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: white;
+        color: var(--delft-blue);
+        font-size: 15px;
+
+    }
     /* Responsive styling */
     @media (max-width: 768px) {
         .hero
         {
-            height: auto;
+            height: 99vh;
+            /* text-align: center; */
         }
         header{
             justify-content: space-between;
@@ -299,10 +334,13 @@
         }
         .hero-img{
             width: 100%;
+            display: flex;
+            justify-content: center;
         }
         .hero-img img{
-            height: 400px;
+            height: 200px;
             z-index: -1;
+            width: 70%;
             display: block;
         }
     }

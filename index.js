@@ -22,7 +22,7 @@ eventsMenuBtn.addEventListener('mouseover',()=>{
 })
 // scroll haeder change color
 window.addEventListener('scroll',() => {
-  if(window.scrollY>0){
+  if(window.scrollY>100){
     header.classList.add('header-scrolled')
   }
   else
