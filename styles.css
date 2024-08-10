@@ -1,0 +1,24 @@
+/* ===UNIVERSAL CODE === */
+:root{
+    /* CSS HEX */
+--delft-blue: #152b52ff;
+--dark-pastel-green: #41b548ff;
+--picton-blue: #21a5daff;
+--white-smoke: #f1efefff;
+--white: #ffffffff;
+
+}
+@font-face {
+    font-family: lalezar;
+    src: url(./Assets/fonts/Lalezar/Lalezar-Regular.ttf);
+}
+@font-face {
+    font-family: roboto;
+    src: url(./Assets/fonts/Roboto/Roboto-Black.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lalezar,roboto,system-ui;
+}
