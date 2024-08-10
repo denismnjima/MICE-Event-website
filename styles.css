@@ -167,6 +167,7 @@
         flex-direction: column;
         cursor: pointer;
         gap: 4px;
+        transition: 1s ease-in;
     }
 
     .hamburger div {
@@ -174,11 +175,40 @@
         height: 3px;
         background-color: white;
     }
+    .hamburger-clicked{
+        flex-direction: column;
+        cursor: pointer;
+        gap: 4px;
+    }
+    .hamburger-clicked div
+    {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+    }
+    .hamburger-clicked div:nth-child(1){
+        transform: rotate(50deg);
+        transition: 1s;
+    }
+
+    .hamburger-clicked div:nth-child(2){
+        transform: rotate(-50deg);
+        margin-top: -7px;
+        transition: 1s;
+    }
+
+    .hamburger-clicked div:nth-child(3){
+        display: none;
+        transition: 1s;
+    }
 
     /* Responsive styling */
     @media (max-width: 768px) {
         header{
             justify-content: space-between;
+        }
+        .header-scrolled{
+            background-color: var(--white);
         }
        header nav {
         display: none;

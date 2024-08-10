@@ -5,12 +5,15 @@ const header = document.querySelector('header')
 // mobile menu toggle
 function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
+    const hamburger = document.querySelector('#hamburger')
     if(menu.style.display === 'flex'){
         menu.style.display = 'none'
         header.classList.remove('header-scrolled')
+        hamburger.classList.remove('hamburger-clicked')
     }else{
         menu.style.display = 'flex'
         header.classList.add('header-scrolled')
+        hamburger.classList.add('hamburger-clicked')
     }
 }
 // mega menu hover
