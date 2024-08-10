@@ -23,6 +23,14 @@
         box-sizing: border-box;
         font-family: system-ui,lalezar,roboto;
     }
+    /* animation */
+    @keyframes rotato {
+        0%{
+        }
+        100%{
+            transform: rotateY(360deg);
+        }
+    }
     /* Hero section */
     .hero{
         background-image: url(./Assets/images/nairobi.jpg);
@@ -165,6 +173,11 @@
         margin-left: 10px;
         transition: .4s;
     }
+    .mobile-menu a:active {
+        color: var(--white);
+        background-color: #41b548;
+        border-radius: 20px 0 0 20px;
+    }
 
     .hamburger {
         display: none;
@@ -207,9 +220,41 @@
         display: none;
         transition: 1s;
     }
+    .hero-content{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: 30px;
+    }
+    .hero-text{
+        width: 60%;
+    }
+    .hero-text h1{
+        color: white;
+        font-size: 3vmin;
+        padding-bottom: 10px;
+   }
+    .hero-text h2{
+        font-family:roboto ;
+        color: white;
+        font-size: 8vmin;
 
+    }
+    .hero-img{
+        width: 40%;
+    }
+    .hero-img img{
+        width: 100%;
+        animation-name: rotato;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
     /* Responsive styling */
     @media (max-width: 768px) {
+        .hero
+        {
+            height: auto;
+        }
         header{
             justify-content: space-between;
         }
@@ -229,5 +274,18 @@
         }
         .mobile-menu {
             display: none;
+        }
+        .hero-content{
+            flex-direction: column-reverse;
+        }
+        .hero-text{
+            width: 100%;
+        }
+        .hero-img{
+            width: 100%;
+        }
+        .hero-img img{
+            height: 400px;
+            z-index: 0 !important;
         }
     }
