@@ -303,8 +303,7 @@
     @media (max-width: 768px) {
         .hero
         {
-            height: 93vh;
-            text-align: center;
+            height: auto;
         }
         header{
             justify-content: space-between;
@@ -332,11 +331,11 @@
         .hero-text{
             width: 100%;
             padding-left: 5px;
-            align-items: center;
+            align-items: left;
         }
         .hero-img{
             width: 100%;
-            display: flex;
+            display: none;
             justify-content: center;
         }
         .hero-img img{
