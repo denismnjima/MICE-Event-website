@@ -246,13 +246,13 @@
     }
     .hero-text h1{
         color: white;
-        font-size: 15px;
+        font-size: 25px;
         padding-bottom: 10px;
    }
     .hero-text h2{
         font-family:roboto ;
         color: white;
-        font-size: 35px;
+        font-size: 45px;
 
     }
     .hero-img{
@@ -332,6 +332,12 @@
             width: 100%;
             padding-left: 5px;
             align-items: left;
+        }
+        .hero-text h1{
+            font-size: 16px;
+        }
+        .hero-text h2{
+            font-size: 35px;
         }
         .hero-img{
             width: 100%;
