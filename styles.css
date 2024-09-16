@@ -525,9 +525,43 @@
         width: 70px;
         height: 10px;
         border-radius: 10px;
-        background: linear-gradient(90deg, rgba(209, 119, 15, 0.927) 13%, rgba(2, 62, 102, 0.927) 94%);
+        background: linear-gradient(90deg, rgba(15, 209, 135, 0.927) 13%, rgba(2, 62, 102, 0.927) 94%) ;
         margin-right: 10px;
 
+    }
+    .heading2{
+        color: white;
+        font-size: 30px;
+    }
+    .about .cont article{
+        color: rgb(211, 211, 211);
+        line-height: 1.5;
+        padding: 5px;
+    }
+    .about .cont .highlight{
+        display: flex;
+        margin: 10px;
+    }
+    .about .cont .highlight .icon{
+        color: #41b548;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        padding: 5px;
+        border: 1px solid #41b548;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    .about .btn{
+        padding: 15px 30px;
+        background: linear-gradient(90deg, rgba(15, 209, 135, 0.927) 13%, rgba(2, 62, 102, 0.927) 94%) ;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        color: white;
     }
 
 /* MEDUIM DEVICES ============================================================== */
@@ -619,6 +653,22 @@
     .spots{
         width: 95%;
         margin: 10px auto;
+    }
+    /* ABOUT ======================= */
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about .img{
+        width: 95%;
+        margin: 10px auto;
+        height: 250px;
+    }
+    .about .img img{
+        border-radius: 20px 20px 0 0;
+    }
+    .about .cont{
+        width: 90%;
+        margin: 0 auto;
     }
 
 

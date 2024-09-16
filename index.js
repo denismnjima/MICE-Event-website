@@ -45,9 +45,9 @@ x=setInterval(() => {
   let minutes = Math.floor(((timeRemaining%(1000*60*60*24))%(1000*60*60))/(1000*60))
   let seconds = Math.floor((((timeRemaining%(1000*60*60*24))%(1000*60*60)%(1000*60))/1000))
   if(timeRemaining>0){
-    document.querySelector('#days').innerHTML=days.toString().length==1?`0${days}`:days
-    document.querySelector('#hours').innerHTML=hours.toString().length==1?`0${hours}`:hours
-    document.querySelector('#mins').innerHTML=minutes.toString().length==1?`0${minutes}`:minutes
+    document.querySelector('#days').innerHTML=days.toString().length==1?`0${days}:`:days+':'
+    document.querySelector('#hours').innerHTML=hours.toString().length==1?`0${hours}:`:hours+':'
+    document.querySelector('#mins').innerHTML=minutes.toString().length==1?`0${minutes}:`:minutes+':'
     document.querySelector('#secs').innerHTML=seconds.toString().length==1?`0${seconds}`:seconds
   }
 
