@@ -20,6 +20,10 @@ function toggleMenu() {
 eventsMenuBtn.addEventListener('mouseover',()=>{
     eventsMenu.style.display = eventsMenu.style.display==='none'?'block':'none'
 })
+// hide mega menu
+function hideMega(){
+    eventsMenu.style.display ='none'
+}
 // scroll haeder change color
 window.addEventListener('scroll',() => {
   if(window.scrollY>100){
@@ -32,7 +36,7 @@ window.addEventListener('scroll',() => {
 })
 
 // timer
-let endDate = new Date("Sep 9, 2024 00:00:00").getTime()
+let endDate = new Date("Nov 28, 2024 00:00:00").getTime()
 x=setInterval(() => {
   let now = new Date().getTime()
   let timeRemaining = endDate-now
