@@ -61,7 +61,7 @@
                     <img src="./Assets/images/man-nobg.png" alt="Africa Mice">
                 </div>
             </div>
-            <div class="event-details">
+            <div class="event-details reveal-item">
                 <div class="detail">
                     <h3>28th-29th November</h3>
                     <p>Date</p>
@@ -200,19 +200,84 @@
 
          <!-- =============================SPEAKERS ======================================== -->
         <section class="schedule">
+            <div class="overlay">
             <div class="cont reveal-item">
                 <div class="heading1-cont">
                     <div class="line"></div>
                     <h2>Schedule</h2>
                 </div>
-                <article>
-                    <p>This year, we have a stellar lineup of thought leaders and industry pioneers who are driving innovation across the Meetings, Incentives, Conferences, and Exhibitions (MICE) landscape in Africa and beyond.</p>
-                </article>
-            </div>
+                <dic class="schedule-picker">
+                    <div class="choice selected" id="choice1" onclick="toggleShedule(1)">
+                        <h4>Day 1</h4>
+                        <p>28th November</p>
+                    </div>
+                    <div class="choice" id="choice2" onclick="toggleShedule(2)">
+                        <h4>Day 2</h4>
+                        <p>29th November</p>
+                    </div>
+                </dic>
+                <div class="schedule-cont">
+                    <!-- schedule 1 ============ -->
+                    <div class="schedule-day" id="schedule1">
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM </h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                    </div>
 
+                    <!-- schedule 2 -->
+                    <div class="hidden" id="schedule2">
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                        <div class="single-schedule reveal-item">
+                            <h3>11:00 AM</h3>
+                            <p>Pre Event Registration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </section>
 
-         <section class="slider reveal-item">
+         <section class="slider reveal-item ">
             <div class="logo-slider">
                 <div class="logo-slide-track">
                   <img src="./Assets/images/nairobi-night.jpg" alt="Logo 1" class="logo-slide">

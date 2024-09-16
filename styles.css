@@ -23,6 +23,9 @@
         box-sizing: border-box;
         font-family: system-ui,lalezar,roboto;
     }
+        .hidden{
+            display: none;
+        }
         /* animation */
         @keyframes rotato {
             0%{
@@ -606,7 +609,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background: linear-gradient(0deg, rgba(0,244,40,1) 0%, rgba(17,228,66,0.6280087527352298) 35%, rgba(0,255,55,0) 100%);
+        background: linear-gradient(0deg, rgba(0,190,244,1) 0%, rgba(17,169,228,0.6280087527352298) 22%, rgba(0,255,55,0) 100%);
         z-index: 2;
         border-radius: 20px;
         display: flex;
@@ -614,7 +617,7 @@
         justify-content: flex-end;
         padding: 10px;
         padding-bottom: 20px;
-        color: #152b52;
+        color: #ffffff;
     }
 /* IMAGE SLIDER =========================== */
     .slider{
@@ -658,7 +661,64 @@
         opacity: 1;
         transform: translateY(0);
       }
-
+/* SCHEDULE =================================================================== */
+    .schedule{
+        background: url(./Assets/images/nairobi.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .schedule .overlay{
+        background: linear-gradient(90deg, rgba(21, 43, 82, 0.927) 13%, rgba(65, 181, 73, 0.927) 94%);
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+     .schedule-picker{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: 80px;
+        margin: 10px auto;
+        backdrop-filter: blur(200px);
+        border: 2px solid rgba(124, 124, 124, 0.589);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .schedule-picker .choice{
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    .schedule-picker .choice p{
+        font-size: 10px;
+    }
+    .schedule-picker .selected{
+        color: #41b548;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .schedule .schedule-day{
+        margin: 10px auto;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .schedule .single-schedule{
+        display: flex;
+        gap: 20px;
+        margin: 10px;
+        background-color: rgba(255, 255, 255, 0.411);
+        padding: 20px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .schedule .single-schedule h3{
+        color: white;
+    }
 /* MEDUIM DEVICES ============================================================== */
 @media only screen and (min-width:768px) and (max-width:1200px){
     /* HERO CONTENT ============= */
@@ -689,6 +749,11 @@
     .speakers .speakers-show .ind-speaker{
         width: 30%;
     }
+    /* SCHEDULE ==================================== */
+    .schedule .schedule-day{
+        width: 70%;
+    }
+
 
 }
 /* MOBILE DEVICES ============================================================== */
@@ -802,5 +867,9 @@
         width: 43%;
         height: 250px;
     }
+        /* SCHEDULE ==================================== */
+        .schedule .schedule-day{
+            width: 80%;
+        }
 
 }
