@@ -2,6 +2,27 @@ const eventsMenuBtn = document.querySelector('.events-menu')
 const eventsMenu = document.querySelector('.mega-menu')
 const header = document.querySelector('header')
 
+document.addEventListener('DOMContentLoaded', function() {
+  const revealItems = document.querySelectorAll('.reveal-item');
+
+  function revealOnScroll() {
+    const viewportHeight = window.innerHeight;
+
+    revealItems.forEach(item => {
+      const { top, bottom } = item.getBoundingClientRect();
+
+      if (top < viewportHeight && bottom >= 0) {
+        item.classList.add('visible');
+      } else {
+        item.classList.remove('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll(); // Initial check in case elements are already in view
+});
+
 // mobile menu toggle
 function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
