@@ -427,7 +427,7 @@
 @media only screen and (max-width:768px){
     .hero
     {
-        height: 100vh;
+        height: 80vh;
     }
     header{
         justify-content: space-between;
@@ -466,13 +466,20 @@
     }
     /* EVENT DETAILS ================ */
     .event-details{
-        flex-direction: column;
         height: auto;
         top: 60vh;
+        width: 95vw;
+        margin-left: 2.5vw;
         /* display: none; */
     }
     .event-details .detail{
         border: none;
+    }
+    .event-details .detail h3{
+        font-size: 15px;
+    }
+    .event-details .detail p{
+        font-size: 10px;
     }
 
 
