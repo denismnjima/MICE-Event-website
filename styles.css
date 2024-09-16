@@ -406,8 +406,132 @@
         transition: 1s;
     }
 
+
+    /* TICKET SECTION */
+    .tickets{
+        background-color: #152b52;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .stats-container table
+    {
+        width: fit-content;
+        margin: 10px;
+        
+    }
+    .stats-container table tr td
+    {
+        padding-right: 15px;
+        text-align: center;
+        color: white;
+    }
+    .stats-container table tr:nth-child(1) td{
+        font-size: 8vmin;
+        -webkit-text-stroke-width: 2px;
+         -webkit-text-stroke-color: rgb(255, 255, 255);
+         color: #152b52;
+        /* font-family:lalezar; */
+    }
+    .stats-container table tr:nth-child(1) td:nth-child(1){
+        -webkit-text-stroke-color: rgb(71, 216, 71);
+    }
+    .stats-container table tr:nth-child(1) td:nth-child(2){
+        -webkit-text-stroke-color: rgb(5, 209, 223);
+    }
+    .stats-container table tr:nth-child(1) td:nth-child(3){
+        -webkit-text-stroke-color: rgb(71, 216, 204);
+    }
+    .stats-container table tr:nth-child(1) td:nth-child(1){
+        -webkit-text-stroke-color: rgb(71, 216, 71);
+    }
+    .stats-container table tr:nth-child(2) td{
+        font-size: 15px;
+        padding-left: 5px;
+        margin-top: -55px;
+
+    }
+    .spots{
+        width: 40%;
+        height: 150px;
+        background: linear-gradient(90deg, rgba(209, 119, 15, 0.927) 13%, rgba(2, 62, 102, 0.927) 94%);
+        border-radius: 20px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .spots .bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .spots .bottom div{
+        width: 60%;
+        color: white;
+
+    }
+    .spots .bottom h4{
+        width: 100%;
+        font-size: 25px;
+        font-weight: 900;
+        font-family: roboto;
+        text-transform: uppercase;
+        color: white;
+    }
+    .spots .bottom a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        font-size: 35px;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.493);
+        border-radius: 50%;
+        border: 1px solid white;
+    }
+    .spots .top{
+        color: white;
+        text-align: right;
+    }
+
+/* ABOUT ========================================= */
+    .about{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 30px;
+        background-color: #152b52;
+    }
+    .about .img{
+        width: 40%;
+        height: 500px;
+    }
+    .about .img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0 30px 39px 0;
+    }
+    .about .cont{
+        width: 60%;
+        padding: 10px;
+    }
+    .heading1-cont{
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        color: white;
+    }
+    .heading1-cont .line{
+        width: 70px;
+        height: 10px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, rgba(209, 119, 15, 0.927) 13%, rgba(2, 62, 102, 0.927) 94%);
+        margin-right: 10px;
+
+    }
+
 /* MEDUIM DEVICES ============================================================== */
-@media only screen and (min-width:768px) and (max-width:1000px){
+@media only screen and (min-width:768px) and (max-width:1200px){
     /* HERO CONTENT ============= */
     .hero-content .content{
         padding: 10px;
@@ -475,13 +599,27 @@
     .event-details .detail{
         border: none;
     }
+    .event-details .detail:nth-child(2){
+        display: none;
+    }
+    .event-details .detail:nth-child(3){
+        display: none;
+    }
     .event-details .detail h3{
         font-size: 15px;
     }
     .event-details .detail p{
         font-size: 10px;
     }
-
+    /* TICKETS =============== */
+    .tickets{
+        flex-direction: column;
+        align-items: center;
+    }
+    .spots{
+        width: 95%;
+        margin: 10px auto;
+    }
 
 
 }
