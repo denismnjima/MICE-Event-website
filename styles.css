@@ -623,6 +623,15 @@
     .slider{
         background-color: #152b52;
         padding:20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider p{
+        width: 80%;
+        text-align: center;
+        color: white;
+        line-height: 1.5;
     }
     .logo-slider {
         width: 100%;
@@ -719,6 +728,45 @@
     .schedule .single-schedule h3{
         color: white;
     }
+/* FOOTER =================================================================== */
+footer{
+    background-color: #152b52;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgba(202, 83, 14, 0.927) 13%, rgba(65, 181, 73, 0.927) 94%); */
+}
+footer .bottom-menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+footer .bottom-menu ul a{
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+}
+footer .bottom-menu ul a:hover{
+    scale: 1.1;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+.copyright img{
+    width: 100px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.copyright div{
+    color: white;
+    padding-top: 10px;
+}
 /* MEDUIM DEVICES ============================================================== */
 @media only screen and (min-width:768px) and (max-width:1200px){
     /* HERO CONTENT ============= */
