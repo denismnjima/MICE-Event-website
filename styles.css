@@ -263,13 +263,13 @@
         .hero-content .content{
             width: 60%;
             padding: 30px;
-            padding-top: 10vh;
+            padding-top: 5vh;
         }
         .hero-content .content h1{
             color: white;
             font-family: roboto;
             text-transform: uppercase;
-            font-size: 10vmin;
+            font-size: 9vmin;
         }
         .hero-content .content p{
             color: white;
@@ -563,6 +563,71 @@
         font-size: 16px;
         color: white;
     }
+/* SPEAKERS ============================================ */
+    .speakers{
+        background-color: #152b52;
+        padding: 10px;
+        padding-top: 30px;
+        display: flex;
+    }
+    .speakers .cont{
+        width: 20%;
+        color: white;
+        line-height: 1.5;
+        padding-top: 50px;
+    }
+    .speakers .cont article{
+        margin-left: 10px;
+    }
+    .speakers .speakers-show{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 80%;
+    }
+    .speakers .speakers-show .ind-speaker{
+        width: 22%;
+        margin: 10px;
+        height: 400px;
+        position: relative;
+    }
+    .speakers .speakers-show .ind-speaker img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        border-radius: 20px;
+    }
+    .speakers .ind-speaker .speaker-details{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(0,244,40,1) 0%, rgba(17,228,66,0.6280087527352298) 35%, rgba(0,255,55,0) 100%);
+        z-index: 2;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 10px;
+        padding-bottom: 20px;
+        color: #152b52;
+    }
+/* IMAGE SLIDER =========================== */
+.logo-slider {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .logo {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+  }
 
 /* MEDUIM DEVICES ============================================================== */
 @media only screen and (min-width:768px) and (max-width:1200px){
@@ -578,6 +643,21 @@
     .event-details{
         width: 86vw;
         margin-left: 7vw;
+    }
+    /* SPEAKERS ===================================== */
+    .speakers{
+        flex-direction: column;
+    }
+    .speakers .cont{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .speakers .speakers-show{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .speakers .speakers-show .ind-speaker{
+        width: 30%;
     }
 
 }
@@ -616,7 +696,7 @@
     }
     .hero-content .content{
         width: 100%;
-        padding-top: 10vh;
+        padding-top: 5vh;
     }
     .hero-content .hero-img{
         display: none;
@@ -674,6 +754,23 @@
         display: block;
         width: 95%;
         margin: 10px auto;
+    }
+       /* SPEAKERS ===================================== */
+     .speakers{
+        flex-direction: column;
+    }
+    .speakers .cont{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .speakers .speakers-show{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .speakers .speakers-show .ind-speaker{
+        width: 43%;
+        height: 250px;
     }
 
 }
