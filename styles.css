@@ -617,17 +617,37 @@
         color: #152b52;
     }
 /* IMAGE SLIDER =========================== */
-.logo-slider {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-  }
-  
-  .logo {
-    width: 100%;
-    height: auto;
-    transition: opacity 1s ease-in-out;
-  }
+    .slider{
+        background-color: #152b52;
+        padding:20px 0;
+    }
+    .logo-slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .logo-slide-track {
+        display: flex;
+        width: calc(200px * 10); 
+        animation: scroll 50s linear infinite;
+    }
+    
+    .logo-slide {
+        width: 400px;
+        border-radius: 20px;
+        height: 200px;
+        padding: 10px;
+    }
+    
+    @keyframes scroll {
+        0% {
+        transform: translateX(0);
+        }
+        100% {
+        transform: translateX(-100%);
+        }
+    }
 
 /* MEDUIM DEVICES ============================================================== */
 @media only screen and (min-width:768px) and (max-width:1200px){
