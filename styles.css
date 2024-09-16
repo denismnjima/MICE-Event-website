@@ -84,6 +84,7 @@
             display: flex;
             width: 65%;
             justify-content: flex-end;
+            align-items: center;
         }
         header nav ul {
             list-style: none;
@@ -117,6 +118,7 @@
             border-radius: 5px;
             font-weight: bold;
             margin-left: 20px;
+            height: fit-content;
         }
     
         .top-button:hover {
@@ -766,6 +768,92 @@ footer .bottom-menu ul a:hover{
 .copyright div{
     color: white;
     padding-top: 10px;
+}
+
+/* ================CONTACT PAGE ============================== */
+.contact-page{
+    min-height: 100vh;
+}
+.get-in-touch{
+    background: linear-gradient(90deg, rgba(16, 44, 97, 0.927) 13%, rgba(65, 181, 73, 0.927) 94%);
+    min-height: 50vh;
+    
+}
+.get-in-touch .container{
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.get-in-touch .container .contact-info{
+    width: 50%;
+    padding: 15px;
+}
+.get-in-touch .container .contact-info h2{
+    color: white;
+    text-transform: uppercase;
+}
+.get-in-touch .container .contact-info p{
+    color: white;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.get-in-touch ul{
+    list-style: none;
+    margin-top: 20px;
+}
+.get-in-touch ul a{
+    margin: 10px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+}
+.get-in-touch ul a li i{
+    margin-right: 10px;
+    color: #41b548;
+}
+.contact-form{
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.486);
+    transform: translateY(40px);
+    width: 50%;
+}
+.contact-form h2{
+    text-transform: uppercase;
+    padding: 5px;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-form form input{
+    height: 45px;
+    border: 2px solid #41b548;
+
+}
+.contact-form form textarea{
+    border: 2px solid #41b548;
+    margin-bottom: 10px;
+    resize: vertical;
+    max-height: 100px;
+    min-height: 70px;
+}
+.contact-form form label{
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+.contact-form form button{
+    background-color: #41b548;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    color: white;
+}
+.contact-page footer{
+    min-height: 45vh;
+    justify-content: flex-end;
 }
 /* MEDUIM DEVICES ============================================================== */
 @media only screen and (min-width:768px) and (max-width:1200px){
