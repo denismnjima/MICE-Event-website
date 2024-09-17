@@ -31,8 +31,8 @@
                         <a href=""><li>Home</li></a>
                         <a href="contact.html">
                             <li>Contact us</li>
-                        <a href=""><li>Speakers</li></a>
-                        <a href=""><li>Partners</li></a>
+                        <a href="#speakers"><li>Speakers</li></a>
+                        <a href="#schedule"><li>Schedule</li></a>
                     </ul>
                     <button class="top-button">Register</button>
                 </nav>
@@ -44,8 +44,8 @@
                 <div class="mobile-menu" id="mobileMenu">
                     <a href="./index.html">Home</a>
                     <a href="./contact.html">Contact us</a>
-                    <a href="#">Speakers</a>
-                    <a href="#">Partners</a>
+                    <a href="#speakers">Speakers</a>
+                    <a href="#schedule">Schedule</a>
                     <button class="top-button" style="background-color: #ff4500; color: white;">Register</button>
                 </div>
             </header>
@@ -118,7 +118,7 @@
 
 <!--  =================================ABOUT  ================================= -->
 
-         <section class="about">
+         <section class="about" id="about">
             <div class="cont reveal-item">
                 <div class="heading1-cont">
                     <div class="line"></div>
@@ -153,7 +153,7 @@
          </section>
 
          <!-- =============================SPEAKERS ======================================== -->
-         <section class="speakers">
+         <section class="speakers" id="speakers">
             <div class="cont reveal-item">
                 <div class="heading1-cont">
                     <div class="line"></div>
@@ -199,7 +199,7 @@
          </section>
 
          <!-- =============================SPEAKERS ======================================== -->
-        <section class="schedule">
+        <section class="schedule" id="schedule">
             <div class="overlay">
             <div class="cont reveal-item">
                 <div class="heading1-cont">
@@ -207,21 +207,22 @@
                     <h2>Schedule</h2>
                 </div>
                 <dic class="schedule-picker">
-                    <div class="choice selected" id="choice1" onclick="toggleShedule(1)">
+                    <label class="choice selected" id="choice1" onclick="toggleShedule(1)" for="toggle-sch">
                         <h4>Day 1</h4>
                         <p>28th November</p>
-                    </div>
-                    <div class="choice" id="choice2" onclick="toggleShedule(2)">
+                    </label>
+                    <label class="choice" id="choice2" onclick="toggleShedule(2)" for="toggle-sch2">
                         <h4>Day 2</h4>
                         <p>29th November</p>
-                    </div>
+                    </label>
                 </dic>
                 <div class="schedule-cont">
                     <!-- schedule 1 ============ -->
+                    <input type="radio" class="toggle" name="toggle-sch" id="toggle-sch" checked>
                     <div class="schedule-day" id="schedule1">
                         <div class="single-schedule reveal-item">
                             <h3>11:00 AM </h3>
-                            <p>Pre Event Registration</p>
+                            <p> 1. Pre Event Registration</p>
                         </div>
                         <div class="single-schedule reveal-item">
                             <h3>11:00 AM</h3>
@@ -246,10 +247,11 @@
                     </div>
 
                     <!-- schedule 2 -->
-                    <div class="hidden" id="schedule2">
+                    <input type="radio" class="toggle" name="toggle-sch" id="toggle-sch2">
+                    <div class="schedule-day" id="schedule2">
                         <div class="single-schedule reveal-item">
                             <h3>11:00 AM</h3>
-                            <p>Pre Event Registration</p>
+                            <p>Pre Event Registration 2</p>
                         </div>
                         <div class="single-schedule reveal-item">
                             <h3>11:00 AM</h3>

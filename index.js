@@ -1,8 +1,6 @@
 const eventsMenuBtn = document.querySelector('.events-menu')
 const eventsMenu = document.querySelector('.mega-menu')
 const header = document.querySelector('header')
-const schedule1 = document.querySelector('#schedule1')
-const schedule2 = document.querySelector('schedule2')
 const scheduleBth1 = document.querySelector('#choice1')
 const scheduleBtn2 = document.querySelector('#choice2')
 
@@ -28,26 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
   revealOnScroll(); // Initial check in case elements are already in view
 });
 
-// // Toggle schedule days
-// function toggleShedule(num){
-//   if(num==2){
-//     scheduleBtn2.classList.add('selected')
-//     scheduleBth1.classList.remove('selected')
-//     schedule1.classList.remove('schedule-day')
-//     schedule1.classList.add('hidden')
-//     schedule1.classList.remove('hidden')
-//     schedule2.classList.add('schedule-day')
-//   }
-//   else{
-//     scheduleBtn2.classList.remove('selected')
-//     scheduleBth1.classList.add('selected')
-//     schedule1.classList.add('schedule-day')
-//     schedule1.classList.remove('hidden')
-//     schedule1.classList.add('hidden')
-//     schedule2.classList.remove('schedule-day')
-//   }
+// Toggle schedule days
+function toggleShedule(num){
+  if(num==2){
+    scheduleBtn2.classList.add('selected')
+    scheduleBth1.classList.remove('selected')
+  }
+  else{
+    scheduleBtn2.classList.remove('selected')
+    scheduleBth1.classList.add('selected')
+  }
 
-// }
+}
 // mobile menu toggle
 function toggleMenu() {
     const menu = document.getElementById('mobileMenu');

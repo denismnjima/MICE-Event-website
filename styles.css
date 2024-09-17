@@ -1,28 +1,31 @@
-    /* ===UNIVERSAL CODE === */
-    :root{
-        /* CSS HEX */
-    --delft-blue: #152b52;
-    --dark-pastel-green: #41b548;
-    --picton-blue: #21a5daff;
-    --option:#003694;
-    --white-smoke: #f1efefff;
-    --white: #ffffffff;
+        /* ===UNIVERSAL CODE === */
+        :root{
+            /* CSS HEX */
+        --delft-blue: #152b52;
+        --dark-pastel-green: #41b548;
+        --picton-blue: #21a5daff;
+        --option:#003694;
+        --white-smoke: #f1efefff;
+        --white: #ffffffff;
 
-    }
-    @font-face {
-        font-family: lalezar;
-        src: url(./Assets/fonts/Lalezar/Lalezar-Regular.ttf);
-    }
-    @font-face {
-        font-family: roboto;
-        src: url(./Assets/fonts/Roboto/Roboto-Black.ttf);
-    }
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: system-ui,lalezar,roboto;
-    }
+        }
+        @font-face {
+            font-family: lalezar;
+            src: url(./Assets/fonts/Lalezar/Lalezar-Regular.ttf);
+        }
+        @font-face {
+            font-family: roboto;
+            src: url(./Assets/fonts/Roboto/Roboto-Black.ttf);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui,lalezar,roboto;
+        }
+        body{
+            scroll-behavior: smooth; 
+        }
         .hidden{
             display: none;
         }
@@ -729,6 +732,16 @@
     }
     .schedule .single-schedule h3{
         color: white;
+    }
+    .toggle{
+        display: none;
+    }
+    
+    input:checked+div{
+        display: flex !important;
+    }
+    input:not(:checked)+div{
+        display: none !important;
     }
 /* FOOTER =================================================================== */
 footer{
