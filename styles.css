@@ -194,7 +194,7 @@
             top: 70px;
             right: 0;
             width: 100%;
-            height: 80vh;
+            height: 98vh;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 1000;
             transition: display .4s ease-in-out;
@@ -872,6 +872,27 @@ footer .bottom-menu ul a:hover{
     min-height: 45vh;
     justify-content: flex-end;
 }
+/* FORM SUBMISSION MESSAGE ===================================================== */
+    .success-message {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .success-message i {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .success-message h2 {
+        color: green;
+        font-size: 1.8rem;
+    }
+
+    .success-message p {
+        font-size: 1.2rem;
+        color: #333;
+    }
+
 /* MEDUIM DEVICES ============================================================== */
 @media only screen and (min-width:768px) and (max-width:1200px){
     /* HERO CONTENT ============= */
