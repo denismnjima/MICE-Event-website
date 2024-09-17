@@ -1021,6 +1021,10 @@ footer .bottom-menu ul a:hover{
         height: 250px;
     }
     /* SCHEDULE ==================================== */
+    .schedule .overlay{
+        padding: 5px;
+    }
+
     .schedule .schedule-day{
         width: 98%;
      }
