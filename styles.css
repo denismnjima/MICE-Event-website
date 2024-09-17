@@ -22,6 +22,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: system-ui,lalezar,roboto;
+            text-decoration: none;
         }
         body{
             scroll-behavior: smooth; 
@@ -863,6 +864,7 @@ footer .bottom-menu ul a:hover{
     border: none;
     font-size: 18px;
     color: white;
+    margin-top: 10px;
 }
 .contact-page footer{
     min-height: 45vh;
