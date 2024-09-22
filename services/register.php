@@ -1,6 +1,7 @@
 <?php
 
-require 'db.php'; // Include the database connection
+require 'db.php';
+require 'email.php';
 
 header('Content-Type: application/json');
 
@@ -37,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if (mysqli_stmt_execute($stmt)) {
                 $response['success'] = true;
                 $response['message'] = 'Registration successful!';
+                send_email($email,$name,'register');
             } else {
                 $response['success'] = false;
                 $response['message'] = 'Error while saving data. Please try again.';

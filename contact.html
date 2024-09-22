@@ -7,10 +7,11 @@
     <meta name="description" content="Get in touch with Aasha. Contact us to inquire about our portfolio, services, or team members.">
     <meta name="keywords" content="Contact, Aasha, Portfolio, Services, Team, Business, Get in Touch">
     <meta name="author" content="Aasha">
-    <title>Contact - Aasha</title>
+    <title>Contact | Africa MICE Summit</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="index.js" defer></script>
+    <script src="./submit.js" defer></script>
 </head>
 
 <body>
@@ -54,18 +55,19 @@
                 </div>
                 <div class="contact-form">
                     <h2>Say Something</h2>
-                    <form action="/submit-form" method="post">
+                    <form id="contactForm">
                         <label for="name">Your Name</label>
                         <input type="text" id="name" name="name" required>
-
+                
                         <label for="email">Your Mail</label>
                         <input type="email" id="email" name="email" required>
-
+                
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
-
+                
                         <button type="submit">Send</button>
                     </form>
+                    <div id="formResponse"></div>
                 </div>
             </div>
         </section>

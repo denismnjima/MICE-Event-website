@@ -25,7 +25,27 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll(); // Initial check in case elements are already in view
 });
+// contact form
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
 
+  // Gather form data
+  let formData = new FormData(this);
+  alert('submitted')
+  // Create an AJAX request
+  fetch('./services/contact.php', {
+      method: 'POST',
+      body: formData
+  })
+  .then(response => response.text()) // Assuming PHP returns plain text
+  .then(data => {
+      // Display success or error messages in the formResponse div
+      document.getElementById('formResponse').innerHTML = `<p style="color: green;">${data}</p>`;
+  })
+  .catch(error => {
+      document.getElementById('formResponse').innerHTML = `<p style="color: red;">There was an error submitting the form.</p>`;
+  });
+});
 // Toggle schedule days
 function toggleShedule(num){
   if(num==2){
